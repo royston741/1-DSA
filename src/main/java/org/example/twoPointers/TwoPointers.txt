@@ -1,0 +1,58 @@
+Two pointers
+
+1) can be a sorted array
+2) can b used in linear data structure
+3) Use two pointers left and right
+
+Problems:
+
+1) Valid Palindrome
+- filter only alphanumeric value
+- left pointer at start and right pointer at end
+- move left and right pointer towards center
+- if characters at both pointers are not equal, return false
+
+2) Two Sum II - Input Array Is Sorted
+Approach 1
+- left pointer points at smallest value
+- right pointer points at largest value
+- calculate sum of both pointers
+- if sum is equal to target, return indices
+- if sum is less than target, move left pointer to right
+- if sum is greater than target, move right pointer to left
+
+Approach 2
+- Use a map to store all the elements of the array
+- check the remaining value (target - current element) in the map
+- if found, return indices
+- else store the element in the map
+
+3) Three sum - find triplets that sum to zero
+- sort the array
+- iterate through the array with index i
+- for each i, set left pointer to i+1 and right pointer to end of array
+- calculate sum of nums[i], nums[left], nums[right]
+- if sum is zero, add triplet to result and move both pointers
+- if sum is less than zero, move left pointer to right
+- if sum is greater than zero, move right pointer to left
+- use Set to store and remove duplicates.
+
+4) Container With Most Water
+- left pointer at start and right pointer at end
+- height is determined by the shorter height i.e. min(height[left], height[right])
+- width is determined by the distance between left and right pointers i.e. right - left
+- calculate area = height * width
+- update max area if current area is greater than max area
+- move the pointer pointing to the shorter height towards center
+
+5) Trapping Rain Water
+- use two pointers left and right at start and end of the array
+- maintain two variables leftMax and rightMax to store the maximum height to the left and right of the pointers
+- iterate until left pointer is less than right pointer
+- check the minimum height in left part and right part and accordingly calculate the trapped water
+- if left part is smaller, update leftMax if it is smaller than the height of left pointer
+ or calculate water trapped at left pointer (leftmax -  heights[left]) and move left pointer to right
+- if right part is smaller, update rightMax if it is smaller than the height of right pointer
+or calculate water trapped at right pointer (rightmax - heights[right]) and move right pointer to left
+
+
