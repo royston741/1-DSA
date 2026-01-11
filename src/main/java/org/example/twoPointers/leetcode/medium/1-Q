@@ -1,0 +1,3 @@
+1) Longest palindromic substring
+- for every element expand left and right until palindrome
+- do this for odd and even

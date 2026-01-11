@@ -1,0 +1,40 @@
+1) Best time to buy and sell stock
+- buy pointer =0
+- sell pointer =1
+- if price at sell > price at buy
+    - calculate profit
+    - update max profit if needed
+- else
+    - move buy pointer to sell pointer
+- move sell pointer forward
+
+2) contains duplicate
+Approach 1
+- create a set to store seen numbers
+- for each number in the array
+    - if number is in set
+        - return true
+    - else
+        - add number to set
+- return false
+
+Approach 2
+- add all elements to a set
+- compare size of set with size of array
+- if sizes are different
+    - return true
+- else
+    - return false
+
+3) Product of array except self - Prefix and Suffix product
+- crete a prefix array which at each index i contains product of all elements to the left of i
+- create a suffix array which at each index i contains product of all elements to the right of i
+- for each index i in the original array
+    - result[i] = prefix[i] * suffix[i]
+
+4) Maximum subarray - Kadane's Algorithm
+- set the current sum and max sum to the first element
+- for each element from the second to the last
+    - update current sum to be the maximum of the current element and current sum + current element
+    - update max sum if current sum is greater than max sum
+

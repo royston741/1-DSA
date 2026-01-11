@@ -1,0 +1,28 @@
+1) Remove duplicates from sorted array
+Approach 1 - Two Pointers
+-  [0,0,1,1,1,2,2,3,3,4]
+- left will point at the last unique element found
+- right will explore the array
+- if left element != right element, we found a new unique element
+- move left pointer forward and copy right element to left position
+
+2) Remove element
+- left pointer to tract the index to insert element
+- right pointer to track element
+- if the right element is not equal to value to remove than insert at left index and increment left
+
+3) Find first occurrence of element in sorted array
+Approach 1 - Use string index of
+Approach 2 - two pointers
+- for every element check if the target string exist starting from that index
+- eg: "sadbutsad", "sad"
+- At index 0 = s, 1=a, 2=d  => found
+- return index 0
+- if not found return -1
+Approach 3
+- foe every index create a substring start with that index and end with the index + target length
+- compare the substring with target string
+- if found return index else return -1
+
+4) Valid palindrome
+- start from both end bring team closer to check if palindrome
