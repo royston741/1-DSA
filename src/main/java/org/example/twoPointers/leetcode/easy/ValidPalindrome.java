@@ -2,6 +2,7 @@ package org.example.twoPointers.leetcode.easy;
 
 import java.util.stream.Collectors;
 
+// https://leetcode.com/problems/valid-palindrome/?envType=problem-list-v2&envId=two-pointers
 public class ValidPalindrome {
     public boolean isPalindrome(String s) {
         // only alphanumeric element with lower case
