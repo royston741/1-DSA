@@ -1,0 +1,11 @@
+Sliding window -
+- Applicable on linear data structure like array and string.
+- applied on contiguous part i.e. sub array, sub string
+- check the window like sum of the window and accordingly the max sum of the window
+- Types
+    1) fixed
+    - Add new element
+    - Remove i-k element i.e. remove element outside window
+    - Can calculate result if pointer at k-1 reached the window size
+    2) Non-fixed
+- validation a window using map and set data structure

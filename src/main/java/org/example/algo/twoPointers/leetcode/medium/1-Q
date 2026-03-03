@@ -1,0 +1,37 @@
+1) Longest palindromic substring
+- for every element expand left and right until palindrome
+- do this for odd and even
+
+2) 3Sum Closest
+- sort the array
+- for every index element a left pointer and right pointer and sum them
+- calculate the distance between them and move the pointers accordingly
+
+3) Remove Duplicates from Sorted Array II
+- left pointer to tract the insert position
+- right pointer to loop over the array
+- count to tack frequency
+- if count is not grater than 2 tha replace the element replace element and move left pointer
+
+4) Remove nth node from end
+- First count the length of the list and calculate the target index
+- Second loop until the target is found
+- remove the target
+
+5) Rotate list
+- First find the tail node and calculate length of list
+- create circular reference by pointing tail node next to head
+- target = length -k
+- find the new tail
+- new tail next will be head
+- than new tail next will be null removing circular reference
+- Note - if the value of k greater than length the rotation will repeat so k=k%length
+
+6) Rotate string
+- convert into array.
+- use two pointers left and right
+- left = start and right = end
+- bring them towards center by switching the elements
+- remove empty string and concat
+
+7)

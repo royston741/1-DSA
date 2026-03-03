@@ -1,0 +1,14 @@
+1) Longest Repeating Character Replacement
+- keep track of element that has repeated most in a window
+- check if the character that needs to be changed is greater than k
+- shrink the window if yes
+    - increment left
+    - update the freq map
+
+2) Permutation in a string
+- Need to check if the frequency of character in s1 is same in s2 in a window
+- first store s1 char in a map along with FreeCAD in a map
+- than loop ove s2 char and maintain a window of s1 length
+- keep on adding s2 element in a map along with freq
+- if the size of the window exceeds s1 length than remove left char
+- compare the s1map with s2ma to check they have same char and their frequency

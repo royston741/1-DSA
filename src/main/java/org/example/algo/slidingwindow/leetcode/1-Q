@@ -1,0 +1,18 @@
+Repeated DNA Sequences
+- create a window of 10 and store it in a map with each window incremented
+when repeated
+- filter only thous window which are repeated more than 1
+
+Contains Duplicate II
+- create a window of k shrink window and use a set to tract the number of element already present
+- if already present return true or else add in the set
+
+Arithmetic Slices - [1,2,3,4] = 3-2 = 2-1 i.e 1=1
+- create a window that is greater than or equal to 3
+- count the num of arithmetic window
+- [1,2,3]-> curr++ -> 1
+- [1,2,3,4] -> curr++ -> 2 [2,3,4] [1,2,3,4]
+
+Find Anagram in string
+- create a map of anagram element and its freq
+- for every window create a ma of element and its freq and check the map is similar to anagram map
